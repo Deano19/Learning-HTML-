@@ -1,39 +1,97 @@
-# Here is an the beginning of how I used HTML to create my very first App.
+#Beginning
 
-To start off with I got an understanding of how the basic sytaxs work in HTML such as;
+<p>
+  This a paragraph icon.
+</p>
+<button>
+  Hello
+</button>
+<a 
+href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=3803s" 
+target="_blank">
+  Link to YouTube
+</a>
 
--Button: creates a button
--p:create a paragraph
--a href="Link": creates a hyperlink
-  
-[Beginning - Copy.zip](https://github.com/Deano19/Buttons/files/11410369/Beginning.-.Copy.zip)
+#Buttons
+<style>
+  .subscribe-button{
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 103;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+  }  
 
-Next was creating buttons,whilst also understanding alot more features that can transform basic buttons to unique once, 
-its endless. The files below show you what buttons I have created using different syntax's, such as;
+  .subscribe-button:hover{
+    opacity: 70%;
+  }
 
-The main new sytax that I learnt (very important) is 'style', 
-this sytax is the main command which will allow you to stylise your buttons, (in this example), 
-next was the commands inside of the 'style' sytax.
+  .subscribe-button:active{
+    opacity: 50%;
+  }
 
--background-color: changes the background color inside the button
--color: changes the color of teh letters
--border: changes the thickness of the border (none basically means no border outline)
--height: height of the button
--width: width (length, from right to left) of the button
--cursor: determines what happens to the cursor once it's hovered the button (open the file to get a better undertsanding)
--margin: the gap between multiple button (individual margin commands for each direction)
--transition: creates a process (in this example changes the opacity of a period of time.
--padding: thickness of the border created around the word (individual padding commands for each direction)
 
-As there are three seperate buttons another command is used in order to seperate the stylisation of all buttons, 
-in order to so an 'element class' command is used. 
+  .join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s, 
+      color 0.5s,padding-left 0.2s, padding-right 0.2s;
+  }
 
-example: .join-button {stylisation commands}
+  .join-button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-'Element class' command isn't just used for seperating the sylisation commands for specific buttons,
-it is also used create actions, such as:
+  .join-button:active{
+    opacity: 70%;
+  }
 
--hover: action once the cursor hovers over the button
--active: action once button is clicked
 
-[Buttons - Copy.zip](https://github.com/Deano19/Buttons/files/11410377/Buttons.-.Copy.zip)
+  .tweet-button{
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 70;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.2s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
